@@ -13,9 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::any('/', function () {
-    return redirect('uye');
-});
-Route::get('uye', function () {
-    return redirect('/');
-});
+Route::get('/', 'HomeController@index');
+
